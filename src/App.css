@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+html{
+  background-color: #111111;
+}
+
+.bebas {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.montse {
+  font-family: "Montserrat", sans-serif;
+}
+
+span{
+  color: brown;
+}
+
+muestras{
+  color: #a30000;
+}
+/* 
+.animado1 {
+ 
+  transform: translateX(850px);
+  animation: aparecer linear forwards;
+  animation-timeline: view();
+  animation-range: entry -2000% cover 30%;
+}
+
+@keyframes aparecer {
+  to {
+ 
+    transform: translateY(0);
+    transition: all 2s ease-in-out;
+    animation-duration: 2s;
+  }
+}
+
+.animado2 {
+
+  transform: translateX(-850px);
+  animation: aparecer2 ease-in-out forwards;
+  animation-timeline: view();
+  animation-range: entry -2000% cover 30%;
+}
+
+@keyframes aparecer2 {
+  to {
+   
+    transform: translateY(0);
+  transition: all 0.5s ease-in-out;
+  animation-duration: 2s;
+  
+  }
+} */
+
+
+img{
+  cursor: pointer;
+}
