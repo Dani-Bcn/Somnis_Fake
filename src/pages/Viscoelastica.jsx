@@ -106,7 +106,6 @@ export default function Viscoelastica() {
           start: "center bottom",
           end: "bottom top", // Cambiado a "bottom top" para que termine cuando el párrafo sale completamente
           scrub: 2, // Reducido un poco para mejor control
-          markers: true,
         },
       });
 
