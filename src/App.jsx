@@ -3,9 +3,9 @@ import { Route, Routes } from "react-router-dom";
 
 import Home from "./Home";
 import Header from "./Header";
-import Viscoelastica from "./pages/Viscoelastica";
+import Somnis from "./pages/Somnis";
 import Footer from "./Footer";
-import Somiador from "./pages/Somiador";
+import Aniversari from "./pages/Aniversari";
 
 function App() {
   return (
@@ -13,8 +13,8 @@ function App() {
       <Header />
       <Routes>
         <Route path={"/"} element={<Home />} />
-        <Route path={"/viscoelastica"} element={<Viscoelastica />} />
-        <Route path={"/somiador"} element={<Somiador />} />
+        <Route path={"/somnis"} element={<Somnis />} />
+        <Route path={"/aniversari"} element={<Aniversari />} />
       </Routes>
       <Footer />
     </main>

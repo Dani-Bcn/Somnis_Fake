@@ -13,7 +13,8 @@ html{
 }
 
 span{
-  color: brown;
+  color: rgb(238, 0, 0);
+  font-weight: bold;
 }
 
 muestras{

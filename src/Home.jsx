@@ -126,35 +126,36 @@ export default function Home() {
 
   const matalassosImages = [
     {
-      nombre: "viscoelastica",
+      nombre: "SOMNIS",
+      pagina: "SOMNIS",
       direccion:
-        "https://assets.zyrosite.com/cdn-cgi/image//YBgjMgabRgiQr27z/visco_baja-mnl4o8wWR2CbrBxb.png",
+        "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=768,fit=crop/YBgjMgabRgiQr27z/01_somnis-nbf0mk2wzWvSA2Wi.jpg",
     },
     {
-      nombre: "molles ensacades",
+      nombre: "75 ANIVERSARI",
+      pagina: "ANIVERSARI",
       direccion:
-        "https://assets.zyrosite.com/cdn-cgi/image//YBgjMgabRgiQr27z/molles_ensacades-baja-AQEewwzo5bin5WP0.jpg",
+        "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=768,fit=crop/YBgjMgabRgiQr27z/75-aniversari-b5RId3YhdP1Ib6bN.png",
     },
     {
-      nombre: "normablock",
+      nombre: "KING",
+      pagina: "KING",
+
       direccion:
-        "https://assets.zyrosite.com/cdn-cgi/image//YBgjMgabRgiQr27z/normablock-baja-mjE4gR03PMT1KJpR.jpg",
+        "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=768,fit=crop/YBgjMgabRgiQr27z/king-jCQYEixdlv77BlHF.webp",
     },
     {
-      nombre: "articulables",
+      nombre: "SLEEP",
+      pagina: "SLEEP",
       direccion:
-        "https://assets.zyrosite.com/cdn-cgi/image//YBgjMgabRgiQr27z/bultex-dOqZ7RGzvJfBLrNX.jpg",
+        "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=768,fit=crop/YBgjMgabRgiQr27z/sleep-5UA0g7FjBaB5NDil.webp",
     },
     {
-      nombre: "juvenil",
+      nombre: "PODIUM PLUS",
+      pagina: "PODIUMPLUS",
       direccion:
-        "https://assets.zyrosite.com/cdn-cgi/image//YBgjMgabRgiQr27z/capassalera-baja-YD0EXe586zHQKNln.jpg",
-    },
-    {
-      nombre: "bultex",
-      direccion:
-        "https://assets.zyrosite.com/cdn-cgi/image//YBgjMgabRgiQr27z/cabecera_juvenil_baja-m5K8QrM89RTzOeQw.jpg",
-    },
+        "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=768,fit=crop/YBgjMgabRgiQr27z/podium_plus-wk4t8Hi9Dg3Icrhv.webp",
+    }
   ];
   const coixinsImages = [
     {
@@ -188,7 +189,7 @@ export default function Home() {
         "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=768,fit=crop/YBgjMgabRgiQr27z/ergo_cames-iqK6883wf5ZQKBan.webp",
     },
     {
-      nombre: "yasai (de viatge)",
+      nombre: "yasai / de viatge",
       direccion:
         "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=968,h=768,fit=crop/YBgjMgabRgiQr27z/yasai-VNhF3mHArSxVH8Ox.webp",
     },
@@ -328,27 +329,27 @@ export default function Home() {
             ref={cntMatalassosRef}
             onMouseEnter={handleMatalassos}
             onMouseLeave={handleState}
-            className="relative mt-80 w-full h-50 overflow-visible rounded-xl flex justify-center items-center"
+            className="relative mt-80 w-full h-50 overflow-visible rounded-xl flex justify-center items-center  shadow-[0_0_10px_0px_rgba(184,28,28,0.5)] bg-[#50010185] p-4 my-4"
           >
             <div className="absolute inset-0 gap-1  flex justify-center overflow-hidden items-center  rounded-2xl">
               {matalassosImages.map((item, index) => (
                 <div
                   key={index}
-                  className="flex justify-center items-start relative overflow-hidden"
+                  className="flex justify-center items-start relative overflow-hidden "
                 >
                   <img
                     ref={(el) => (itemImagesRefs.current[index] = el)}
                     src={item.direccion}
                     alt={item.nombre}
-                    className="object-cover  w-96 flex  h-96  hover:grayscale-0 grayscale rounded-lg py-12"
-                    onClick={() => navigate(`/${item.nombre}`)}
+                    className="object-cover  w-96 flex  h-96 bg-[#ffffff]  hover:grayscale-0 grayscale rounded-lg py-12"
+                    onClick={() => navigate(`/${item.pagina.toLowerCase()}`)}
                     onMouseOver={() => handleText(index)}
                     onMouseOut={() => handleTextOut(index)}
                   />
 
                   <h3
                     ref={(el) => (itemRefs.current[index] = el)}
-                    className="-mt-20 absolute text-4xl pointer-events-none text-[#b81c1c] "
+                    className="-mt-20  absolute text-4xl pointer-events-none text-[#b81c1c] "
                   >
                     {item.nombre}
                   </h3>
@@ -366,8 +367,7 @@ export default function Home() {
             ref={cntCoixinsRef}
             onMouseEnter={handleCoixins}
             onMouseLeave={handleState}
-            className="relative mt-2 w-full h-50 overflow-visible rounded-xl flex justify-center items-center"
-          >
+            className="relative mt-2 w-full h-50 overflow-visible rounded-xl flex justify-center items-center  shadow-[0_0_10px_0px_rgba(184,28,28,0.5)] bg-[#3800005e] p-4 my-4">
             <div className="absolute inset-0 gap-1  flex justify-center overflow-hidden items-center  rounded-2xl">
               {coixinsImages.map((item, index) => (
                 <div
@@ -378,7 +378,7 @@ export default function Home() {
                     ref={(el) => (itemImagesCoixinsRefs.current[index] = el)}
                     src={item.direccion}
                     alt={item.nombre}
-                    className="object-cover  w-96 flex  h-96  hover:grayscale-0 grayscale rounded-lg py-12"
+                    className="object-cover  w-96 flex  h-96 bg-[#ffffff]   hover:grayscale-0 grayscale rounded-lg py-12"
                     onClick={() => navigate(`/${item.nombre}`)}
                     onMouseOver={() => handleTextCoixins(index)}
                     onMouseOut={() => handleTextCoixinsOut(index)}

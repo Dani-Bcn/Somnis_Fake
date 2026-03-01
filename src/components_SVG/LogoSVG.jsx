@@ -22,7 +22,7 @@ const LogoSvg = () => {
       onClick={() => navigate("/")}
       onMouseOut={() => handleColorChange2()}
       onMouseOver={() => handleColorChange()}
-      className="logo fixed w-55 lg:w-100 lg:mt-14 transition-all z-500 cursor-pointer"
+      className="logo fixed w-55 lg:w-100 lg:mt-18 transition-all z-500 cursor-pointer"
     >
       <svg
         className="cursor-pointer"
@@ -35,10 +35,9 @@ const LogoSvg = () => {
           imageRendering: "optimizeQuality",
           fillRule: "evenodd",
           clipRule: "evenodd",
-          transform:"scale(0.60)"
+          transform:"scale(0.8)"
         }}
       >
-        {/* <g transform={`scale(${scale})`} transformOrigin="center"></g> */}
         <g transform={`scale(2)`} transformOrigin="center"></g>
         <defs>
           <style>{`
