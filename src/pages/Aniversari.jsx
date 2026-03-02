@@ -143,21 +143,29 @@ export default function Aniversari() {
           </m.div>
 
           <p className="w-10/12 text-xl mt-4 text-[#d3d3d3] text-start">
-            <span>✓</span> Matalàs adaptable, fermesa interior mitjana/alta.
-            <br /> 
-            <span>✓</span> Transpiració garantida pel seu nucli de molles ensacats
-            Springbox emmotllable a qualsevol edat i pes.
-            <br /> <span>✓</span> Sistema ONE SIDE, concentra els materials en una mateixa
-            cara del matalàs, oferint un descans òptim en un matalàs fibra que
-            ofereix una adaptació ideal.
-            <br /> <span>✓</span> Cara inferior: amb base de transpiració, preparada per
-            descansar sobre base entapissada o canape. <br /> <span>✓</span> Alçada: 28 cm
+            <span className=" h-10 text-3xl">MATALÀS D'HOTEL ED.LIMITADA</span>
+            <br /> <span>✓</span> Matalàs adaptable, fermesa interior
+            mitjana/alta.
+            <br />
+            <span>✓</span> Matalàs de qualitat superior edició limitada.
+            <br /> <span>✓</span> Com els nostres matalassos de les grans
+            cadenes hoteleres.
+            <br />
+            <span>✓</span> Nucli de fil continu Normablock i Visco Air
+            <br />
+            <span>✓</span> Acolliment progressiu i adaptabilitat total al cos.
+            <br />
+            <span>✓</span> Confort durant tota la nit.
+            <br />
+            <span>✓</span> Alçada: 29 cm
           </p>
         </div>
 
         <div className="flex justify-around items-center w-full gap-20 mt-20">
           <div className="text-[#ffffff] text-xl text-start gap-4 flex flex-col">
-            <h3 className="text-8xl mt-10 bebas text-[#be0000] underline ">COMPOSICIÓ</h3>
+            <h3 className="text-8xl mt-10 bebas text-[#be0000] underline ">
+              COMPOSICIÓ
+            </h3>
             <p>
               1. <span>Nucli.</span> <br /> Springbox System. Carcassa de molls
               ensecats per a un millor descans. Aquest sistema ofereix una gran

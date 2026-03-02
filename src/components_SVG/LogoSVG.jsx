@@ -22,7 +22,7 @@ const LogoSvg = () => {
       onClick={() => navigate("/")}
       onMouseOut={() => handleColorChange2()}
       onMouseOver={() => handleColorChange()}
-      className="logo fixed w-55 lg:w-100 lg:mt-18 transition-all z-500 cursor-pointer"
+      className="logo fixed w-screen lg:w-100 lg:mt-18 transition-all z-500 cursor-pointer"
     >
       <svg
         className="cursor-pointer"

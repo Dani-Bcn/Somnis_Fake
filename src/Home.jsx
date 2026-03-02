@@ -274,7 +274,7 @@ export default function Home() {
       <ScrollToTop />
       <div
         ref={titleRef}
-        className="w-full flex flex-col items-center justify-center"
+        className="lg:w-full w-full  flex flex-col items-center justify-center"
       >
         <video
           src="https://videos.pexels.com/video-files/4057148/4057148-uhd_2732_1440_25fps.mp4"
@@ -282,16 +282,16 @@ export default function Home() {
           muted
           loop
           playsInline
-          className="fixed top-10  "
+          className="fixed   lg:top-10 top-50  "
         />
-        <div className="absolute w-full  h-[38.5%] top-0 bg-linear-to-b from-[#220000] via-[#11000017] to-[#111111] z-250"></div>
+        <div className="absolute w-full    lg:h-[40.5%] top-0 bg-linear-to-b from-[#220000] via-[#11000017] to-[#111111] z-50"></div>
         <m.div
           initial={{ opacity: 0, y: -80 }}
           animate={{ opacity: 1, y: -20 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
-          className="w-7/12 realtive mt-85 mb-50 text-center z-50"
+          className="lg:w-7/12 mt-80 lg:mt-85 mb-35 lg:mb-50 text-center z-50 "
         >
-          <h2 ref={titleRef} className="text-8xl bebas z-50">
+          <h2 ref={titleRef} className="lg:text-8xl text-5xl bebas z-50">
             DORM A <span>CASA</span> TEVA
           </h2>
           <m.div />
@@ -303,7 +303,7 @@ export default function Home() {
           >
             <h2
               ref={titleRef}
-              className="index-1 justify-center items-center flex  text-[140px] bebas z-100"
+              className="index-1 flex-wrap  justify-center items-center flex text-6xl lg:text-[140px] bebas z-50"
             >
               COM EN UN <span>HOTEL</span>
             </h2>
@@ -311,7 +311,7 @@ export default function Home() {
         </m.div>
         <div
           ref={titleRef2}
-          className="w-6/12 z-50 text-7xl bebas -mb-150 text-center"
+          className="w-10/12 z-150 text-3xl lg:text-7xl bebas -mb-150 text-center"
         >
           <h3 className="animado1">
             Volem que <span>dormis</span>

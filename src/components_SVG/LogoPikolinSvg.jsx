@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 
 const LogoSvg = ({ scale = 6 }) => {
+
   const [isMobile, setIsMobile] = useState(false);
-<svg width="400" height="400" viewBox="9700 19000 2000 4000">
- 
+
+<svg width="400" height="400" viewBox="9700 19000 2000 4000"> 
   <path
     d="M9732.04 22672.79l 0 -3334.75 -1429.22 0 0 2866.98c 0,255.46 205.74,467.77 458.81,467.77l 970.41 0z"
     fill="none"
@@ -30,11 +31,11 @@ const LogoSvg = ({ scale = 6 }) => {
     return () => window.removeEventListener("resize", checkScreen);
   }, []);
 
-  const finalScale = isMobile ? scale * 0.6 : scale;
+  const finalScale = isMobile ? scale * 0.1 : scale;
 
   return (
     <svg
-      className="w-7/12 h-20 scale-[2] z-150"
+      className=" lg:w-7/12 lg:h-20   z-150"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 29700 42000"
     >

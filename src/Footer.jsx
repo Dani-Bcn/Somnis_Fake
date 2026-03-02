@@ -31,7 +31,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener"
             title="Go to Facebook page"
-            class="social-icons__link"
+            className="social-icons__link"
             data-v-1af423fa=""
           >
             <svg
@@ -52,7 +52,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener"
             title="Go to Instagram page"
-            class="social-icons__link"
+            className="social-icons__link"
             data-v-1af423fa=""
           >
             <svg
@@ -73,7 +73,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener"
             title="Go to Tiktok page"
-            class="social-icons__link"
+            className="social-icons__link"
             data-v-1af423fa=""
           >
             <svg
@@ -95,7 +95,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener"
             title="Go to Twitter page"
-            class="social-icons__link"
+            className="social-icons__link"
             data-v-1af423fa=""
           >
             <svg
