@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import AnimatedPath from "./components_SVG/AnimatedPath";
 import { useNavigate } from "react-router-dom";
 import ScrollToTop from "./ScrollTop";
+import BultexLogoSvg from "./components_SVG/BultexLogoSvg";
 
 export default function Home() {
   gsap.registerPlugin(ScrollTrigger);
@@ -289,9 +290,9 @@ export default function Home() {
           initial={{ opacity: 0, y: -80 }}
           animate={{ opacity: 1, y: -20 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
-          className="lg:w-7/12 mt-80 lg:mt-85 mb-35 lg:mb-50 text-center z-50 "
+          className="lg:w-7/12 mt-60 lg:mt-85 mb-35 lg:mb-50 text-center z-50 "
         >
-          <h2 ref={titleRef} className="lg:text-8xl text-5xl bebas z-50">
+          <h2 ref={titleRef} className="lg:text-8xl mt-5 lg:mt-0 text-5xl bebas z-50">
             DORM A <span>CASA</span> TEVA
           </h2>
           <m.div />
@@ -324,6 +325,7 @@ export default function Home() {
           </h3>
         </div>
         <AnimatedPath />
+        <BultexLogoSvg/>
         <section className="w-10/12 px-5 h-screen  bebas z-50">
           <div
             ref={cntMatalassosRef}
@@ -358,7 +360,7 @@ export default function Home() {
             </div>
             <h2
               ref={textMatalassosRef}
-              className="absolute pointer-events-none text-8xl z-10 text-red-600 drop-shadow-lg opacity-100"
+              className="absolute pointer-events-none text-6xl lg:text-8xl z-10 text-red-600 drop-shadow-lg opacity-100"
             >
               Matalassos
             </h2>
@@ -395,7 +397,7 @@ export default function Home() {
             </div>
             <h2
               ref={textCoixinsRef}
-              className="absolute pointer-events-none text-8xl z-10 text-red-600 drop-shadow-lg opacity-100"
+              className="absolute pointer-events-none text-6xl lg:text-8xl z-10 text-red-600 drop-shadow-lg opacity-100"
             >
               Coixins
             </h2>

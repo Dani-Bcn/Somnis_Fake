@@ -11,6 +11,7 @@ const BultexLogoSvg = ({ scale = 1 }) => {
       width="63.5911mm"
       height="21.8466mm"
       viewBox="0 0 1072 368.28"
+      className="mt-20 h-62"
       style={{
         shapeRendering: "geometricPrecision",
         textRendering: "geometricPrecision",
@@ -18,7 +19,6 @@ const BultexLogoSvg = ({ scale = 1 }) => {
         fillRule: "evenodd",
         clipRule: "evenodd",
       }}
-      className=" z-500"
     >
       <g transform={`scale(${scale})`} transformOrigin="center"></g>
       <defs>

@@ -2,7 +2,7 @@ import { motion as m } from "framer-motion";
 export default function Footer() {
   return (
     <div className=" mt-60  flex-col bg-linear-to-b from-[#18000000] to-[#180000] backdrop-blur-[0px] text-white py-4  text-center text-xs lg:text-sm flex  justify-around items-center z-250">
-      <h4>
+      <h4 className="py-5 lg:py-0">
         Per saber preus, disponibilitat de productes, assessorament, etc...
         CONTACTA amb nosaltres!
       </h4>
