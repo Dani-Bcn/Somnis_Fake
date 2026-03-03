@@ -282,7 +282,7 @@ export default function Home() {
       animate={{ opacity: 1 }}
       transition={{ duration: 2, ease: "easeInOut" }}
       exit={{ opacity: 0, duration: 1 }}
-      className="flex flex-col items-center justify-center text-slate-200 mb-20"
+      className="flex h-screenn flex-col items-center justify-center text-slate-200 mb-20"
     >
       <video
           src="https://videos.pexels.com/video-files/4057148/4057148-uhd_2732_1440_25fps.mp4"
@@ -385,7 +385,7 @@ export default function Home() {
               ref={cntCoixinsRef}
               onMouseEnter={handleCoixins}
               onMouseLeave={handleState}
-              className="relative mt-2 w-full h-50 overflow-visible rounded-xl flex justify-center items-center  shadow-[0_0_10px_0px_rgba(184,28,28,0.5)] bg-[#3800005e] p-4 my-4"
+              className="relative  w-full h-50 overflow-visible rounded-xl flex justify-center items-center  shadow-[0_0_10px_0px_rgba(184,28,28,0.5)] bg-[#3800005e] p-4 mt-4"
             >
               <div className="absolute inset-0 gap-1  flex justify-center overflow-hidden items-center  rounded-2xl">
                 {coixinsImages.map((item, index) => (

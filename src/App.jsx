@@ -6,6 +6,9 @@ import Header from "./Header";
 import Somnis from "./pages/Somnis";
 import Footer from "./Footer";
 import Aniversari from "./pages/Aniversari";
+import King from "./pages/King";
+import Sleep from "./pages/Sleep";
+import Podium_plus from "./pages/Podium_plus";
 
 function App() {
   return (
@@ -15,6 +18,9 @@ function App() {
         <Route path={"/"} element={<Home />} />
         <Route path={"/somnis"} element={<Somnis />} />
         <Route path={"/aniversari"} element={<Aniversari />} />
+        <Route path={"/king"} element={<King />} />
+        <Route path={"/sleep"} element={<Sleep />} />
+        <Route path={"/podiumplus"} element={<Podium_plus />} />
       </Routes>
       <Footer />
     </main>
