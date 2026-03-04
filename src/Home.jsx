@@ -290,7 +290,7 @@ export default function Home() {
           muted
           loop
           playsInline
-          className="fixed sm:-mt-10 scale-450 lg:scale-100 lg:top-10 brightness-50  top-35  "
+          className="fixed z-500 sm:-mt-10 scale-450 lg:scale-100 lg:top-10 brightness-50  top-35  "
         />
       <div
         ref={titleRef}
