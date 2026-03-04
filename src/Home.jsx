@@ -285,19 +285,17 @@ export default function Home() {
       className="flex h-screenn flex-col items-center justify-center text-slate-200 mb-20"
     >
       <video
-          src="https://videos.pexels.com/video-files/4057148/4057148-uhd_2732_1440_25fps.mp4"
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="fixed z-500 sm:-mt-10 scale-450 lg:scale-100 lg:top-10 brightness-50  top-35  "
-        />
+        src="https://videos.pexels.com/video-files/4057148/4057148-uhd_2732_1440_25fps.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="fixed z-0 sm:-mt-10 scale-450 lg:scale-100 lg:top-10 brightness-50  top-35  "
+      />
       <div
         ref={titleRef}
         className="lg:w-full w-full  flex flex-col items-center justify-center"
       >
-        
-       
         <m.div
           initial={{ opacity: 0, y: -80 }}
           animate={{ opacity: 1, y: -20 }}
