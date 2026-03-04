@@ -122,7 +122,7 @@ export default function Aniversari() {
           className="bebas text-4xl -mt-10 mb-20 text-amber-50"
         >
           <h3>Núm. 2 / Mod.</h3>
-          <span className="text-7xl lgtext-[200px]">ANIVERSARI</span>
+          <span className="text-7xl  lg:text-[200px]">ANIVERSARI</span>
         </m.div>
 
         <div className="flex flex-col lg:flex-row justify-around items-start w-full gap-20">
