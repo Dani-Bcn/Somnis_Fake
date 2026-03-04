@@ -282,7 +282,7 @@ export default function Home() {
       animate={{ opacity: 1 }}
       transition={{ duration: 2, ease: "easeInOut" }}
       exit={{ opacity: 0, duration: 1 }}
-      className="flex h-screenn flex-col items-center justify-center text-slate-200 mb-20"
+      className="flex  flex-col items-center justify-center text-slate-200 mb-20"
     >
       <video
         src="https://videos.pexels.com/video-files/4057148/4057148-uhd_2732_1440_25fps.mp4"
@@ -290,7 +290,7 @@ export default function Home() {
         muted
         loop
         playsInline
-        className="fixed z-0 sm:-mt-10 scale-450 lg:scale-100 lg:top-10 brightness-50  top-35  "
+        className="fixed z-0 sm:-mt-10 scale-500 lg:scale-100 lg:top-10 brightness-50  top-35  "
       />
       <div
         ref={titleRef}
@@ -362,7 +362,6 @@ export default function Home() {
                       onMouseOver={() => handleText(index)}
                       onMouseOut={() => handleTextOut(index)}
                     />
-
                     <h3
                       ref={(el) => (itemRefs.current[index] = el)}
                       className="-mt-20  absolute text-4xl pointer-events-none text-[#b81c1c] "
