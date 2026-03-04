@@ -128,23 +128,23 @@ export default function King() {
           <span className="lg:text-[200px] text-9xl">King</span>
         </m.div>
 
-        <section className="flex justify-around items-start w-full gap-20">
+        <section className="flex flex-col lg:flex-row justify-around items-start w-full gap-20">
           <m.div
-            className="w-10/12 h-86 overflow-hidden bg-[#ffffff] rounded-3xl flex justify-center items-center cursor-pointer group"
+            className="lg:w-10/12 h-86 overflow-hidden bg-[#ffffff] rounded-3xl flex justify-center items-center cursor-pointer group"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
             onClick={() => setHoveredImage(images[0])}
           >
             <img
-              className="w-full object-cover transition-transform duration-300 group-hover:scale-110"
+              className="lg:w-full object-cover transition-transform duration-300 group-hover:scale-110"
               src={images[0].src}
               alt={images[0].alt}
             />
           </m.div>
 
           <section className="w-10/12  text-xl  text-[#d3d3d3] text-start flex flex-col gap-4">
-            <span className=" h-10 text-3xl">MATALÀS D'HOTEL ED.LIMITADA</span>
-            <p>
+            <span className=" h-10  text-3xl">MATALÀS D'HOTEL ED.LIMITADA</span>
+            <p className="mt-20 lg:mt-0 ">
               <span>✓</span> Matalàs de molls Normazone i encoixinat Viscofoam
             </p>
             <p>
@@ -164,7 +164,7 @@ export default function King() {
         </section>
 
         <div className="flex justify-around items-center w-full gap-20 mt-20">
-          <div className="text-[#ffffff]  text-start gap-4 flex flex-col">
+          <div className="text-[#ffffff]   flex text-start gap-4  flex-col">
             <h3 className="lg:text-8xl text-6xl mt-10 bebas text-[#be0000] underline ">
               COMPOSICIÓ
             </h3>

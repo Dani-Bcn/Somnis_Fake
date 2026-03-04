@@ -128,9 +128,9 @@ export default function Aniversari() {
           <span className="text-7xl lgtext-[200px]">ANIVERSARI</span>
         </m.div>
 
-        <div className="flex justify-around items-start w-full gap-20">
+        <div className="flex flex-col lg:flex-row justify-around items-start w-full gap-20">
           <m.div
-            className="w-10/12 h-86 overflow-hidden bg-[#ffffff] rounded-3xl flex justify-center items-center cursor-pointer group"
+            className="lg:w-10/12 h-86 overflow-hidden bg-[#ffffff] rounded-3xl flex justify-center items-center cursor-pointer group"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
             onClick={() => setHoveredImage(images[0])}
@@ -142,8 +142,8 @@ export default function Aniversari() {
             />
           </m.div>
 
-          <p className="w-10/12 text-xl mt-4 text-[#d3d3d3] text-start">
-            <span className=" h-10 text-3xl">MATALÀS D'HOTEL ED.LIMITADA</span>
+          <section className="lg:w-10/12  text-xl mt-4 text-[#d3d3d3] text-start">
+            <p><span className=" h-10 text-3xl mt-40">MATALÀS D'HOTEL ED.LIMITADA</span></p>
             <br /> <span>✓</span> Matalàs adaptable, fermesa interior
             mitjana/alta.
             <br />
@@ -158,7 +158,7 @@ export default function Aniversari() {
             <span>✓</span> Confort durant tota la nit.
             <br />
             <span>✓</span> Alçada: 29 cm
-          </p>
+          </section>
         </div>
 
         <div className="flex justify-around items-center w-full gap-20 mt-20">
