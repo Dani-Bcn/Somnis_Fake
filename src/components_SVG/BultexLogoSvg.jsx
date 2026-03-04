@@ -11,7 +11,7 @@ const BultexLogoSvg = ({ scale = 1 }) => {
       width="63.5911mm"
       height="21.8466mm"
       viewBox="0 0 1072 368.28"
-      className="mt-20 h-62"
+      className="mt-20 h-62 z-500"
       style={{
         shapeRendering: "geometricPrecision",
         textRendering: "geometricPrecision",
