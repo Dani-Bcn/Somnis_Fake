@@ -73,7 +73,6 @@ export default function Aniversari() {
       className="h-screenflex flex-col justify-center items-center relative "
     >
       <ScrollToTop />
-
       <AnimatePresence>
         {hoveredImage && (
           <m.div
@@ -103,7 +102,6 @@ export default function Aniversari() {
           </m.div>
         )}
       </AnimatePresence>
-
       <m.img
         initial={{ opacity: 0, scale: 1 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -113,7 +111,6 @@ export default function Aniversari() {
         src="https://assets.zyrosite.com/cdn-cgi/image//YBgjMgabRgiQr27z/fondo-aNqrleXTBr1otkJs.webp"
         alt=""
       />
-
       <div
         ref={titleRef}
         className="z-50 flex mt-100 flex-col justify-center items-center text-center px-10"
@@ -143,7 +140,11 @@ export default function Aniversari() {
           </m.div>
 
           <section className="lg:w-10/12  text-xl mt-4 text-[#d3d3d3] text-start">
-            <p><span className=" h-10 text-3xl mt-40">MATALÀS D'HOTEL ED.LIMITADA</span></p>
+            <p>
+              <span className=" h-10 text-3xl mt-40">
+                MATALÀS D'HOTEL ED.LIMITADA
+              </span>
+            </p>
             <br /> <span>✓</span> Matalàs adaptable, fermesa interior
             mitjana/alta.
             <br />

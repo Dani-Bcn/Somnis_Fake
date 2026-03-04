@@ -123,15 +123,15 @@ export default function Somnis() {
           initial={{ opacity: 0, y: -250 }}
           animate={{ opacity: 1, y: -75 }}
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="bebas text-4xl -mt-10 mb-20 text-amber-50"
+          className="bebas text-4xl -mt-10 lg:mb-20 text-amber-50"
         >
           <h3>Núm. 1 / Mod.</h3>
           <span className="lg:text-[200px] text-8xl">SOMNIS</span>
         </m.div>
 
-        <div className="flex justify-around items-start w-full gap-20">
+        <div className="flex flex-col lg:flex-row justify-around items-start w-full gap-20">
           <m.div
-            className="w-10/12 h-86 overflow-hidden rounded-3xl flex justify-center items-center cursor-pointer group"
+            className="lg:w-10/12 lg:h-86 overflow-hidden rounded-3xl flex justify-center items-center cursor-pointer group"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
             onClick={() => setHoveredImage(images[0])}
@@ -143,22 +143,36 @@ export default function Somnis() {
             />
           </m.div>
 
-          <p className="w-10/12 text-xl mt-4 text-[#d3d3d3] text-start">
-            <span>✓</span> Matalàs adaptable, fermesa interior mitjana/alta.
-            <br /> 
-            <span>✓</span> Transpiració garantida pel seu nucli de molles ensacats
-            Springbox emmotllable a qualsevol edat i pes.
-            <br /> <span>✓</span> Sistema ONE SIDE, concentra els materials en una mateixa
-            cara del matalàs, oferint un descans òptim en un matalàs fibra que
-            ofereix una adaptació ideal.
-            <br /> <span>✓</span> Cara inferior: amb base de transpiració, preparada per
-            descansar sobre base entapissada o canape. <br /> <span>✓</span> Alçada: 28 cm
-          </p>
+          <section className="w-10/12 text-xl mt-4 text-[#d3d3d3] flex-col flex text-start">
+            <h3 className="text-4xl">
+              <span>MATALÀS SOMNIS</span>
+            </h3>
+            <p className="mt-10">
+              <span>✓</span> Matalàs adaptable, fermesa interior mitjana/alta.
+            </p>
+            <br />
+            <p>
+              <span>✓</span> Transpiració garantida pel seu nucli de molles
+              ensacats Springbox emmotllable a qualsevol edat i pes.
+            </p>
+            <p>
+              <br /> <span>✓</span> Sistema ONE SIDE, concentra els materials en
+              una mateixa cara del matalàs, oferint un descans òptim en un
+              matalàs fibra que ofereix una adaptació ideal.
+            </p>
+            <p>
+              <br /> <span>✓</span> Cara inferior: amb base de transpiració,
+              preparada per descansar sobre base entapissada o canape. <br />{" "}
+              <span>✓</span> Alçada: 28 cm
+            </p>
+          </section>
         </div>
 
         <div className="flex justify-around items-center w-full gap-20 mt-20">
           <div className="text-[#ffffff] text-xl text-start gap-4 flex flex-col">
-            <h3 className="lg:text-8xl text-6xl mt-10 bebas text-[#be0000] underline ">COMPOSICIÓ</h3>
+            <h3 className="lg:text-8xl text-6xl mt-10 bebas text-[#be0000] underline ">
+              COMPOSICIÓ
+            </h3>
             <p>
               1. <span>Nucli.</span> <br /> Springbox System. Carcassa de molls
               ensecats per a un millor descans. Aquest sistema ofereix una gran
