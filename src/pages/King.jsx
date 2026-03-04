@@ -122,10 +122,10 @@ export default function King() {
           initial={{ opacity: 0, y: -250 }}
           animate={{ opacity: 1, y: -75 }}
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="bebas text-7xl -mt-10 mb-20 text-amber-50"
+          className="bebas text-4xl -mt-10 mb-20 text-amber-50"
         >
           <h3>3 / Mod.</h3>
-          <span className="text-[200px]">King</span>
+          <span className="lg:text-[200px] text-9xl">King</span>
         </m.div>
 
         <section className="flex justify-around items-start w-full gap-20">
@@ -165,7 +165,7 @@ export default function King() {
 
         <div className="flex justify-around items-center w-full gap-20 mt-20">
           <div className="text-[#ffffff]  text-start gap-4 flex flex-col">
-            <h3 className="text-8xl mt-10 bebas text-[#be0000] underline ">
+            <h3 className="lg:text-8xl text-6xl mt-10 bebas text-[#be0000] underline ">
               COMPOSICIÓ
             </h3>
             <p>

@@ -125,7 +125,7 @@ export default function Sleep() {
           className="bebas text-7xl -mt-10 mb-20 text-amber-50"
         >
           <h3>4 / Mod.</h3>
-          <span className="text-[200px]">Sleep</span>
+          <span className="lg:text-[200px]">Sleep</span>
         </m.div>
 
         <section className="flex justify-around items-start w-full gap-20">
